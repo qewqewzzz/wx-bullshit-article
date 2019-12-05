@@ -1,21 +1,71 @@
 /**index.wxss**/
-.userinfo {
+.container{
+  
+}
+
+.container .header{
+
+}
+.container .header{
+  font-size: 14px;
+  color: #3f72af;
+  padding: 0 2vw 0 2vw;
+}
+.container .header .quot{
+  font-size: 30px;
+  position: relative;
+  bottom: -5px;
+}
+
+.container .main{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .main .input-block{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90vw;
+}
+.container .main .input-block input{
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid #3f72af;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #3f72af;
+}
+.container .main .input-block button{
+  border: none;
+  color: #ffffff;
+  margin-top: 5vw;
+  background: #112d4e;
+  padding: 13px 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 100%;
+}
+.container .main .eg{
+  position: relative;
+  top: 20vw;
+}
+.container .main .eg text{
+  font-size: 14px;
+  color: #3f72af;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.container .info{
+  margin-bottom: 5vw;
+}
+.container .info text{
+  font-size: 12px;
+  color: #dbe2ef;
+  text-align: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+::-webkit-input-placeholder{
+  color: #dbe2ef;
 }

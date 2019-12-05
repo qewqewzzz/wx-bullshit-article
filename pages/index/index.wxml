@@ -1,13 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="header">
+    <text class="quot">“</text>
+    halo! 你可以在这里生成一篇美妙（bull）绝伦（shit）的文章
+    <text class="quot">”</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="main">
+    <view class="input-block">
+      <input type="text" placeholder="请输入文章主题" placeholder-style="color:#dbe2ef" value="{{inputTitle}}" data-value="inputTitle" bind:change="handleInputChange"/>
+      <button bind:tap="handleGo">go</button>
+    </view>
+    <view class="eg" bind:tap="handleViewEg">
+      <text>例如「如何防止脱发」</text>
+    </view>
+  </view>
+  <view class="info">
+    <text>powerd by thisang</text>
   </view>
 </view>
