@@ -29,6 +29,10 @@
   font-size: 16px;
   font-weight: 300;
   color: #112d4e;
+  min-height: 100vw;
+}
+.container .content view{
+  margin-bottom: 15px;
 }
 
 .container .footer{

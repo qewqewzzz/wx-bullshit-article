@@ -38,7 +38,7 @@
   background-color: transparent;
   text-align: center;
   border: none;
-  border-bottom: 3px solid #3f72af;
+  border-bottom: 1px solid #3f72af;
   padding: 10px 14px;
   font-size: 16px;
   color: #3f72af;
@@ -52,6 +52,7 @@
   border-radius: 30px;
   font-size: 14px;
   width: 100%;
+  font-weight: 300;
 }
 .container .main .eg{
   position: relative;
@@ -60,6 +61,7 @@
 .container .main .eg text{
   font-size: 14px;
   color: #3f72af;
+  font-weight: 300;
 }
 
 .container .info{
@@ -69,8 +71,5 @@
   font-size: 12px;
   color: #dbe2ef;
   text-align: center;
-}
-
-::-webkit-input-placeholder{
-  color: #dbe2ef;
+  font-weight: 300;
 }
