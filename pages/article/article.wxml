@@ -1,2 +1,18 @@
 <!--pages/article/article.wxml-->
-<text>pages/article/article.wxml</text>
+<import src="../..//wxParse/wxParse.wxml"/>
+
+<view class="container">
+  <view class="title">
+    <text>{{title}}</text>
+  </view>
+  <view class="info">
+    <text>本文使用超级腻害的那啥生成</text>
+  </view>
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <view class="footer">
+    <button bind:tap="handleShare">share</button>
+    <button bind:tap="handleBack">back</button>
+  </view>
+</view>

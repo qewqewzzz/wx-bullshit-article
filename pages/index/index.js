@@ -11,13 +11,13 @@ Page({
   },
   handleViewEg: function() {
     wx.navigateTo({
-      url: '../article/article'
+      url: '../article/article?title=如何防止脱发'
     })
   },
   handleGo: function() {
     if (this.data.inputTitle) {
       wx.navigateTo({
-        url: '../article/article'
+        url: `../article/article?title=${this.data.inputTitle}`
       })
     } else {
       wx.showToast({
@@ -27,7 +27,12 @@ Page({
       })
     }
   },
-  onLoad: function () {
+  // 生命周期函数
+  // 返回的时候清空输入框文本
+  onShow: function() {
+    this.setData({
+      inputTitle: ''
+    })
   },
   // 分享页面
   onShareAppMessage() {
